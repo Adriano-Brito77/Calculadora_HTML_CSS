@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    
+</head >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<body>
+    <div id="calculator">
+        <div id="display">
+            <div id="last-calc">
+                <span id="data"></span>
+            </div>
+            <div id="result">
+                <img src="./assets/equals.svg" alt="sinal de igual">
+                <span id="resultado"></span>
+                
+            </div>
+            
+        </div>
+        <div id="keyboard">
+            <button class="secundary"onClick= clean()>CE</button> 
+            <button onClick= back()>C</button>
+            <button onclick="addNumberSymbol('%')">%</button>
+            <button class="tertiary"onclick="addNumberSymbol('/')">
+                <img src="./assets/divide.svg" alt="Divide">
+            </button>  
+            <button onclick="addNumberSymbol(7)">7</button>  
+            <button onclick="addNumberSymbol(8)">8</button>  
+            <button onclick="addNumberSymbol(9)">9</button>  
+            <button class="tertiary" onclick="addNumberSymbol('*')">
+                <img src="./assets/x.svg" alt="multiplica">
+            </button>  
+            <button onclick="addNumberSymbol(4)">4</button>  
+            <button onclick="addNumberSymbol(5)">5</button>  
+            <button onclick="addNumberSymbol(6)">6</button>  
+            <button class="tertiary" onclick="addNumberSymbol('-')">
+                <img src="./assets/minus.svg" alt="subtrair">
+            </button>  
+            <button onclick="addNumberSymbol(1)" >1</button>  
+            <button onclick="addNumberSymbol(2)">2</button>  
+            <button onclick="addNumberSymbol(3)">3</button>
+            <button class="tertiary" onclick= "addNumberSymbol('+')">
+                <img src="./assets/plus.svg" alt="somar">
+            </button>
+            <button onclick= "addNumberSymbol('+/-')" >
+                <img src="./assets/plusminus.svg" alt="somarDiminuir">
+            </button> 
+            <button onclick= "addNumberSymbol(0)" >0</button> 
+            <button onclick= "addNumberSymbol(',')">,</button> 
+            <button class="quartiary " onclick= "calcular()">
+               <img src="./assets/equalsreal.svg" alt="equalsReal">
+            </button> 
+                
+        
+            
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
+
